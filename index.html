@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head> 
+        <link rel="icon" href="img/favicon.png" />
+        <title> Posada Marvig </title> <!--&#8211;-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="css/aos.css" rel="stylesheet"><!--https://unpkg.com/aos@2.3.1/dist/aos.css-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <script src="js/jquery.js"></script> <!--https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js-->
+        <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/tarjetas.css">
+        <link rel="stylesheet" href="css/scroll.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        <link rel="stylesheet" href="css/redes.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/carrusel.css">
+        <link rel="stylesheet" href="css/carru.css">
+        <script src="js/smooth.js"></script>
+        <script src="js/scroll-up.js"></script>
+        <meta name="description" content="Sitio web oficial de Posada Marvig"/>
+        <meta name="author" content="Posada Marvig"/>
+        <meta name="keywords" content="Posada Marvig"/>
+        <meta name="MobileOptimized" content="width">
+        <meta charset="uft-8"/>
+        
+        <meta name="og:locale" content="es_ES">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Posada Marvig">
+        <meta property="og:url" content="https://posadamarvig.ml">
+        <meta property="og:title" content="Posada Marvig Margarita">
+        <meta property="og:description" content="Te ofrecemos un ambiente calido y familiar en la maravillosa isla de Margarita">
+        <meta name="theme-color" content="#835aa2">
+    </head>
+    <body>
+
+<header>
+
+        <label for="contenedor-botones" class="nav__label" id="top">
+
+            <div id="barra" class="burger">
+                <i id="barra2" class="fa fa-bars"></i>
+            </div>
+
+            <script>
+                const times= 'fa-times';
+                const bars= 'fa-bars'
+    
+                function animar1 (){
+    
+                    if (document.getElementById("barra2").classList.contains(bars)) {
+      
+                        document.getElementById("barra2").classList.remove(bars)
+                        document.getElementById("barra2").classList.add(times)
+                    } else {
+                        document.getElementById("barra2").classList.remove(times)
+                        document.getElementById("barra2").classList.add(bars)
+                    }
+                }
+    
+                document.getElementById("barra").onclick = function (){
+                    animar1()
+                }
+              </script>
+             
+        </label>
+    
+    <nav> 
+        <input type="checkbox" id="contenedor-botones" class="nav__input" style="display:none">
+        <ul>
+            <div class="contenedor-botones">
+
+                <img src="./img/logo.png" class="logo" onclick="window.location.href='index.html';">
+                <a href="#servicios" class="boton uno"><span>Servicios</span></a>
+                <a href="#fotos" class="boton uno"><span>Fotos</span></a>
+                <a href="#contacto" class="boton uno"><span>Contacto</span></a>
+                <div class="redes"><a href="https://www.instagram.com/posada_marvig/" target="_blank" class="fab fa-instagram"></a><a href="https://www.instagram.com/posada_marvig/" target="_blank" class="fab fa-whatsapp"></a></div>
+                <div class="contenedor-botones" ><a href="#contacto" class="reservas"><span>Reservar</span></a></div>
+            </div>
+
+        </ul>
+    </nav>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav ul");
+            header.classList.toggle("abajo",window.scrollY>0);
+        })
+    </script>
+
+</header>
+
+<div class="inicio" id="inicio">
+    <h1 data-aos="fade-down" class="home">Posada Marvig</h1>
+    <p class="parrafos" style="color: white">Te ofrecemos un ambiente calido y familiar en la maravillosa isla de Margarita.</p> 
+    <div class="bajar">
+    <a href="#fotos" class="fa fa-chevron-down"></a>
+    </div>
+</div>
+
+<section class="contacto" id="fotos">
+    <article>
+        <h2 data-aos="fade-down" class="fotos__title" style="color: rgb(0, 0, 0);">¿Que nos diferencia del resto?</h2>
+        <div class="container-slider">
+            <div class="slider" id="slider" data-aos="fade-down">
+                <div class="slider__section"><img src="./img/Posada1.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada2.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada3.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada4.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada5.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada6.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada7.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada8.jpg" class="fotos__posada"></div>
+                <div class="slider__section"><img src="./img/Posada9.jpg" class="fotos__posada"></div>
+            </div>
+        
+            <div class="slider__btn slider__btn--right" data-aos="fade-down" id="btn-right">&#10095;</div>
+            <div class="slider__btn slider__btn--left" data-aos="fade-down" id="btn-left">&#10094;</div>
+        </div>
+
+        <div class="elements">
+            <span class="quadrate" onclick="currentSlide(1)"></span>
+            <span class="quadrate" onclick="currentSlide(2)"></span>
+            <span class="quadrate" onclick="currentSlide(3)"></span>
+            <span class="quadrate" onclick="currentSlide(4)"></span>
+            <span class="quadrate" onclick="currentSlide(5)"></span>
+            <span class="quadrate" onclick="currentSlide(6)"></span>
+            <span class="quadrate" onclick="currentSlide(7)"></span>
+            <span class="quadrate" onclick="currentSlide(8)"></span>
+            <span class="quadrate" onclick="currentSlide(9)"></span>
+        </div>
+
+
+        <p class="parrafos">Es fácil hacer un gran trabajo si realmente se cree en lo que se hace. Por ese movito trabajamos cada día para ayudar a personas como usted.</p>
+        <div class="contenedor-botones" ><a href="#" class="leermas"><span>Leer más</span></a></div>
+    </article>
+</section>
+
+<section class="servicios" id="servicios">
+    <article>
+        <h2 data-aos="fade-down" class="fotos__title" style="color: #fff;">Caracteristicas y Servicios</h2>
+        <p class="parrafos" style="color: #fff;">Nos interesa que usted tenga una buena estadia en nuestra posada. Por ese motivo nos esforzamos en brindarle los mejores servicios.</p>
+        <div class="contenedor-tarjetas" data-aos="fade-down"><div class="tarjetas"><figure><img src="img/aire.png" class="habilidades-img"><div class="contenido"><h3>Aire Acondicionado</h3></div></figure></div></div>
+        <div class="contenedor-tarjetas" data-aos="fade-down"><div class="tarjetas"><figure><img src="img/wifi.png" class="habilidades-img"><div class="contenido"><h3>Acceso a Internet</h3></div></figure></div></div>
+        <div class="contenedor-tarjetas" data-aos="fade-down"><div class="tarjetas"><figure><img src="img/tv.png" class="habilidades-img"><div class="contenido"><h3>Television por Cable</h3></div></figure></div></div>
+        <div class="contenedor-tarjetas" data-aos="fade-down"><div class="tarjetas"><figure><img src="img/agua.png" class="habilidades-img"><div class="contenido"><h3>Agua Limpia</h3></div></figure></div></div>
+    </article>
+</section>
+
+<section class="contacto" id="contacto">
+    <article class="contacto__articulo">
+
+    <h2 class="contact__title" data-aos="fade-down">Contacto</h2>
+    <p style="color: #000;">Telefono: +58-4126229592<br>Email: posada.marvig@gmail.com</p>
+    <p class="parrafos">¿Quieres saber mas sobre nosotros?<br>Puedes seguir el siguiente formulario para contactarnos.</p>
+    <div class="contact__right-side" data-aos="fade-down">
+        <form action="https://formsubmit.co/posada.marvig@gmail.com" method="post" class="contact__form-wrapper">
+            <div class="contact__input-line">
+                <label for="name" class="contact__label">Nombre</label>
+                <input type="text" name="name" id="name" class="contact__input" required>
+            </div>
+            <div class="contact__input-line">
+                <label for="email" class="contact__label">Email</label>
+                <input type="email" name="email" id="email" class="contact__input" required>
+            </div>
+            <div class="contact__input-line">
+                <label for="telefono" class="contact__label">Telefono</label>
+                <input type="number" name="telefono" id="telefono" class="contact__input"required>
+            </div>
+            <div class="contact__input-line">
+                <label for="message" class="contact__label">Mensaje</label required>
+                <textarea type="text" name="message" id="message" class="contact__input--textarea" required></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="contact__submit-button">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+        </form>
+    </div>
+    
+    </article>
+</section>
+
+<section id="ubicacion">
+    <article class="map">
+        <h2 class="contact__title" data-aos="fade-down" style="color: #ffff;">Ubicación</h2>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.77653424598523!2d-63.81557676893518!3d11.006739274764769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c318ff9503cc53d%3A0x4c968cbf8c34dca8!2sPosada%20Marvig!5e0!3m2!1ses!2sve!4v1662321725407!5m2!1ses!2sve" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="fade-down"></iframe>
+    </article>
+</section>
+
+    <footer>
+        <p class="abajo"> © 2022 Posada Marvig </p>
+    </footer>
+
+    <div class="scroll up" style="display: none">
+        <a href="#top" class="fa fa-chevron-up"></a>
+    </div> 
+
+    <script src="js/aos.js"></script> <!--https://unpkg.com/aos@2.3.1/dist/aos.js-->
+    <script>AOS.init();</script>
+    <script src="./js/carrusel.js"></script>
+
+</body>
+</html>
+
+<!--< Hecho con mucho <3 por Arviixzuh >-->

@@ -1,0 +1,58 @@
+.redes {
+
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 5px;
+}
+
+.redes a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.redes a:hover {
+    transform: translateY(-5px);
+}
+
+.reservas {
+    text-decoration: none;
+    display: inline-flex;
+    background-color: #fff;
+    width: auto;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;  
+}
+
+.reservas:hover {
+    background-color: #cacaca;
+}
+
+.leermas {
+    text-decoration: none;
+    display: inline-flex;
+    background-color: #fff;
+    width: auto;
+    padding: 10px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;  
+}
+
+.leermas:hover {
+    background-color: #cacaca;
+}

@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+.home {
+    padding-top: 40vh ;
+}
+
+.inicio {
+    text-align: center;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://th.bing.com/th/id/R.c8a71ba02fa260d82dabaa21fe5ee765?rik=xdkuaGmIZl6UJg&pid=ImgRaw&r=0") no-repeat center center scroll; /*https://images.hdqwalls.com/download/firewatch-sun-trees-mountains-birds-lake-evening-x8-2560x1080.jpg*/
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.servicios {
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .inicio {
+        background-size: 100% 100%;
+    }
+}
+
+body {
+    width: 100%;
+    font-family: "Poppins";
+    background-size: 1000px;
+    background-position: center center;
+    background-color: #1f1f1f;
+}
+
+.bio {
+    font-size: 20px;
+    max-width: 450px;
+    border-radius: 10px;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+
+.parrafos {
+    font-size: 17px;
+    max-width: 650px;
+    border-radius: 10px;
+    margin: 1rem auto;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 221, 137);
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 221, 137);
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 221, 137);
+}
+
+section article {
+    padding: 100px;
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0,0,0);
+    color: rgb(240, 221, 137);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+br {
+    user-select: none;
+}
+
+@media screen and (max-width: 715px) {
+    .header {
+      height: 6em;
+    }
+
+    .inicio {
+        font-size: 15px;
+        margin: 0;
+        width: auto;
+        padding: 18px;
+    }
+
+    section {
+        min-height: 100vh;
+    }
+}

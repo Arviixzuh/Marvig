@@ -1,0 +1,137 @@
+.fotos__posada {
+    height: 412px;
+    width: 512px;
+}
+
+.container{
+    width: 50%;
+    margin: 1rem auto;
+    position: relative;
+}
+.mySlides{
+    display: none;
+}
+.mySlides img{
+    width: 100%;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    background-color: rgba(0, 0, 0, 0.527);
+    transition: all .4s ease-in-out;
+    user-select: none;
+}
+.prev {
+    transition: all .4s ease-in-out;
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+    text-align: center;
+}
+.quadrate{
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    border-radius: 2px;
+}
+.active, .quadrate:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+@media screen and (max-width:900px) {
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 100%;
+    }
+    .prev,
+    .next{
+        padding: 5px;
+    }
+}
+
+.container-slider{
+    text-align: center;
+    width: 512px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+.slider__section{
+    width: 100%;
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider__btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    background-color: rgba(0, 0, 0, 0.527);
+    transition: all .4s ease-in-out;
+    user-select: none;
+}
+.slider__btn:hover{
+    background: rgba(20, 19, 19, 0.712);
+}
+.slider__btn--left{
+    left: 0;
+}
+.slider__btn--right{
+    right: 0;
+}
+
+@media screen and (max-width:600px) {
+    .container-slider {
+
+        max-width: 340px;
+        overflow: hidden;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .fotos__posada {
+        width: 340px;
+        height: 350px;
+    }
+}
